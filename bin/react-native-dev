@@ -1,0 +1,2 @@
+#!/bin/bash
+docker run --rm --name react-native-dev -it --privileged -v /dev/bus/usb:/dev/bus/usb --mount type=bind,source="$(pwd)",target=/root/project/ react-native-dev bash
