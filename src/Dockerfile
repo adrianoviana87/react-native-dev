@@ -30,7 +30,7 @@ WORKDIR /root
 
 WORKDIR /root/.local/
 
-COPY ./tmux-files/ .
+COPY ./tmux-files ./tmux-files
 
 WORKDIR /root/.local/tmux-files/
 
