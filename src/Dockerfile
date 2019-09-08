@@ -28,5 +28,15 @@ RUN ./bin/sdkmanager "build-tools;28.0.3"
 
 WORKDIR /root
 
+WORKDIR /root/.local/
+
+COPY ./tmux-files/ .
+
+WORKDIR /root/.local/tmux-files/
+
+RUN chmod +x ./install.sh
+
+RUN ./install.sh
+
 COPY ./bashrc /root/.bashrc
 
